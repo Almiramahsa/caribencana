@@ -1,7 +1,8 @@
 import { Box, ChakraProvider } from '@chakra-ui/react';
-import Hero from './components/Hero';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <ChakraProvider>
         <Box minHeight={'100vh'}>
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<LandingPage />} />
           </Routes>
         </Box>
       </ChakraProvider>
