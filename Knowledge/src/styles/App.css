@@ -7,3 +7,10 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.leaflet-container {
+  height: 100vh;
+}
+.leaflet-pane {
+  z-index: 400;
+}
