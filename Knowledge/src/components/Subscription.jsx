@@ -15,8 +15,8 @@ function Subscription() {
     setEmail(event.target.value);
   };
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 m-4 p-2 ">
-      <div className="container justify-center py-2 mx-16 ">
+    <div className="container px-4 grid grid-cols-1 md:grid-cols-2 gap-4 m-4  ">
+      <div className="container justify-center py-2 mx-10 sm:mx-16">
         <a href="https://caribencana.id/">
           <img width="80" height="80" src={cari} alt="CARI Website"></img>
         </a>
