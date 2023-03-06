@@ -1,7 +1,8 @@
+import React, { useEffect, useState } from 'react';
 import { Box, Stack, Heading, Text } from '@chakra-ui/react';
 import PublicationItem from './PublicationItem';
 import DataItem from '../data/DataItem';
-import { useState } from 'react';
+
 function Publications() {
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 3;
@@ -26,8 +27,9 @@ function Publications() {
       setCurrentPage(currentPage + 1);
     }
   }
+
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mt-0.5">
       <Stack spacing={8} direction={{ base: 'column', sm: 'column', md: 'row' }} flexWrap={{ base: 'wrap', sm: 'wrap', md: 'nowrap' }}>
         <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }} flex="1">
           <Heading fontSize="xl">Filter</Heading>

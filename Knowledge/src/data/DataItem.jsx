@@ -12,6 +12,32 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: 'Hazard Assesment, Risk Assesment',
+    abstract:
+      'BACKGROUND AND OBJECTIVES: The increasing population and anthropogenic activities in \
+    coastal areas affects the presence of mercury in coastal waters. Therefore, this study aims to \
+    1) assess the ecological and human health risk of mercury contamination in coastal water; 2) \
+    analyze the effectiveness of polymer sulfur as an absorbent for mercury. \
+    METHODS: A total of fifteen water samples were obtained from the coastal areas of \
+    Makassar and were analyzed using cold vapor atomic absorption spectrophotometry. \
+    Ecological and human health risks were assessed using established assessment methods by \
+    the United States Environmental Protection Agency. The uncertainty and sensitivity tests for \
+    independent variables in human health risk were assessed by the Monte Carlo Simulation \
+    method. Furthermore, polymer sulfur was used as a promising technique for capturing and \
+    reducing the level of mercury in the water column. \
+    FINDINGS: The results showed that the mean concentration of mercury was very high \
+    and exceeded the values established by the World Health Organization, United States of \
+    Environmental Protection Agency, and Indonesian National Standards, indicating elevated \
+    risks to the ecosystem and human health in the future. Additionally, the Monte Carlo \
+    simulation model revealed that the non-carcinogenic risk caused by mercury exposure in \
+    adults and children was greater than 1 (Total Hazard Index>1), indicating the health adverse \
+    effects for both receptors. From the simulation results, the concentration of mercury at 23.3 \
+    percent and exposure time of 21.3 % were the most influential and dominant factors in noncancer risk for adults and children, respectively. Therefore, mercury concentration needs \
+    to be reduced in coastal areas. The application of polymer sulfur is effective for reducing \
+    mercury concentration in water with a percentage reduction range of 39 – 100 percent and \
+    p-value of 0.001. \
+    CONCLUSION: Mercury contamination of coastal water in Makassar city poses ecological and \
+    health risks. The application of polymer sulfur is an effective way for reducing mercury in the \
+    water column',
   },
   {
     id: 'plgd-10380',
@@ -25,6 +51,8 @@ export default [
     name_adm1: 'Bali',
     name_hazard: null,
     name_dmf_sub: null,
+    abstract:
+      'Research has been done about the relocation of earthquake hypocenter position, seismic wave local velocity and correction of seismic wave recording station at the Abang-Culik Fault area according to coordinate 115,25°-115,75° BT and 8,00°-8,60° LS. Data which was used on this research was the earthquake data that occur in the 2015-2020 period. The research was conducted using the coupled velocity-hypocenter method. From the relocation result, the position of the earthquake hypocenter shifted, which initially spread to become more concentrated in the fault plane area. The local velocity decreasing a lot in the 3rd layer which was influenced by the presence of the Mount Agung magma pocket in that area. The correction of Station shown that only 1 station has a negative value of delay time, namely IGBI station while the other 13 stations show a positive value of delay time.',
   },
   {
     id: 'plgd-10389',
@@ -38,6 +66,8 @@ export default [
     name_adm1: 'Bali',
     name_hazard: null,
     name_dmf_sub: null,
+    abstract:
+      'The history of earthquakes records that Bali was once rocked by deadly earthquakes, one of which was the Seririt Earthquake of July 14, 1976 in North Bali. This research aims to find out the spread of hypocenter and relocation of aftershocks in Seririt District on November 14, 2019. Relocation is carried out using the Double Difference method, in accordance with the straightness of seririt fault. The data used is secondary data catalog seririt Bali region 113.478–115.181 BT and 8.357–7.894 LS in 2019. The relocation results showed that the spread of the hypocenter was more collected and was at a depth of 6-25 km spread in all directions. This earthquake occurred due to the activity of the fault up with the dominant horizontal fault moving towards the left (Oblique Fault) in accordance with the straightness of the seririt fault.',
   },
   {
     id: 'plgd-32628',
@@ -51,6 +81,8 @@ export default [
     name_adm1: 'Maluku',
     name_hazard: null,
     name_dmf_sub: 'Impact Assesment, Improve Infrastructure, Restoring',
+    abstract:
+      'The usefulness of the Dhuti dam and its importance for crop irrigation at the Balaghat station, located on the Waingang River in Madhya Pradesh, India, has been the focus of research on rainfall fluctuations in the Wainganga sub-basin. Wainganga is the largest peninsular river in India. Wainganga River flows for 635.40 kilometers. Until its confluence with the Wardha River, the Wainganga River has a catchment area of 51,000 km2. The basin spans the five districts of Maharashtra and three districts of Madhya Pradesh. The Wainganga Basin is also mentioned in "The Jungle Book" by the famous writer Rudyard Kipling. The Wainganga Basin is known for the production of rice and, more specifically, Chinour. Balaghat "Chinour" rice obtained G-Tag certificate in 2021, and is now internationally renowned and exported. Rice crops are irrigated mainly by water from the Dhuti dam throughout the year. The dam is very important for the development of rice crops in the region. Sir Jorge, a British engineer, built the dam between 1911 and 1921. It is one of the oldest earthen dams in India, sealed with lime mortar. Floods have affected the cultivated area and water demand in the Balaghat district area for the past few years. The intensity and duration of rainfall varies from year to year along with changes in climatic conditions. The effect of flooding in a given season, as well as basin factors such as variations in rainfall, coefficient of variance, and agricultural damage were examined.',
   },
   {
     id: 'plgd-33250',
@@ -64,6 +96,8 @@ export default [
     name_adm1: 'Jawa Tengah',
     name_hazard: null,
     name_dmf_sub: 'Improve Infrastructure, Recovery',
+    abstract:
+      'This study analyzes the distribution of smoke in the Nusa Tenggara Islands due to forest and land fires. This study uses secondary data in September 2020, such as satellite image data and meteorological condition data, because in 2020, the Nusa Tenggara Islands have the largest forest fires, NTT reaches 114,719.00 Ha, and NTB reaches 29,157.00 Ha. In this study, to detect smoke caused by forest and land fires, the Himawari-8 satellite and the Terra Aqua satellite will produce images to detect smoke. The image data will be processed using Satellite Animation and Interactive Diagnosis (SATAID) software for the Himawari-8 satellite and Hypersectral Data Viewer for Development of Research Applications (HYDRA) for the Terra Aqua satellite. The image results from the satellite will detect and show the distribution of smoke with the red, green, blue (RGB) technique, where the RGB technique will provide color contrast to the image object to be detected. Then the image results analyzed, and linked to the meteorological conditions that occurred during forest and land fires in the Nusa Tenggara Islands in September 2020.',
   },
   {
     id: 'plgd-37946',
@@ -77,6 +111,8 @@ export default [
     name_adm1: 'Jawa Timur',
     name_hazard: null,
     name_dmf_sub: 'Awareness, Improve Infrastructure, Response Plan',
+    abstract:
+      'Infrastructure development is an important aspect in boosting the economic growth of the Indonesian people, with the stages of infrastructure development which include building facilities and infrastructure can overcome economic inequality, the opening of new jobs, per capita income will increase. Referring to Law No. 28 of 2002 concerning building buildings in article 3 states that to realize a building that is functional and in accordance with the building layout that is harmonious and in harmony with the environment, it must ensure the reliability of the building in terms of safety, health, comfort and convenience. Problems: Based on the description above in the explanation in the background, the researcher formulated the following problem: How to plan a building structure that is strong in withstanding loading according to SNI 1726-2019 and SNI 2847-2013? How to plan building structures according to annual costs. The results of the planning of the Office Building on Jln Basuki Rachmat Surabaya as stated in Chapter IV, from the planning of the floor slab to the foundation in accordance with the elements in the 8-story Building Building and require a cost of Rp. 94,965,401,000, - and the implementation time takes 35 weeks or ± 8 calendar months.',
   },
   {
     id: 'plgd-38027',
@@ -90,6 +126,7 @@ export default [
     name_adm1: 'Sumatera Utara',
     name_hazard: null,
     name_dmf_sub: 'Early Warning, Hazard Assesment, Improve Infrastructure, Preparedness',
+    abstract: '',
   },
   {
     id: 'plgd-38030',
@@ -103,6 +140,8 @@ export default [
     name_adm1: 'Jawa Timur',
     name_hazard: null,
     name_dmf_sub: 'Hazard Assesment, Improving Lives, Preparedness, Recovery, Risk Assesment',
+    abstract:
+      'This study aims to highlight innovative and sustainable measures in adaptation to climate change and the Covid-19 pandemic through integration into flood control efforts based on empirical data in Glintung Kampong, an informal flood-prone settlement in Indonesia and to explore what local wisdom values influence the success of the measures undertaken. This study was designed to use a mixed method combining qualitative and quantitative data. Qualitative data consists of in-depth interviews, observations, and desk studies. Quantitative data is used for the generalization of some qualitative data across a wider field. The study results show that the existence of drainage channel facilities from the government can trigger creative ideas and innovative measures in the community. Community involvement with their “guyub rukun” and “gotong royong” values is the most influential factor in determining the success of the program, followed by community leaders, the ability to adapt to flood risk, and the ability to establish good interactions with external parties.',
   },
   {
     id: 'plgd-38032',
@@ -116,6 +155,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: 'Hazard Assesment, Improve Infrastructure, Improving Lives, Mitigation, Training and Excercise',
+    abstract:
+      'In South Sulawesi, Wajo Regency is one of the areas prone to flooding during the rainy season. Floods that occur in the area cause inundation. The inundation that occurred was caused by the overflow of Lake Tempe. This research was conducted in Laelo Village, Tempe District, which is located around the Tempe Lake Coast. This location was chosen purposively with the consideration that the area has become a frequent flood in the western part of the kelurahan (the part near the lake). The village has a low contour in the west and high in the east. The research design is descriptive and qualitative which aims to describe the state or status of the phenomenon. The purpose of the research is to analyze the forms of adaptation and mitigation that will be carried out by communities in flood-affected areas. This research uses field surveys, in-depth interviews, making field notes, and documentation. The data collection method was carried out using purposive sampling because the desired sample in the study was only people living in the coastal area of the lake, namely in Laelo Village which was only affected by flooding, not the entire Laelo Village community. Data analysis techniques in qualitative descriptive research are carried out with interactive analysis in the form of cycles. Data analysis was carried out simultaneously with the implementation process of data collection. The results of interviews with the community show that they understand that flooding is an ordinary natural phenomenon which is an overflow of a lake, but they do not know why there is a flood. Some people who live on the shores of the lake feel that almost every year they are exposed to floods from the lake. Where the form of adaptation they do is to raise the pole of the house and prepare a boat that is moored under the house to be used as a means of transportation in the event of a flood. Several forms of mitigation that have been carried out are water hyacinth retaining embankments, and making taller bridges with concrete connecting roads from house to house. Information has been found regarding evacuation signs with the evacuation route installed, the mosque is used as a place to disseminate information related to the incident and development of the flood. It is better to form a disaster-resilient village in the area to create an area that is more prepared to face disasters.',
   },
   {
     id: 'scps-222928',
@@ -129,6 +170,8 @@ export default [
     name_adm1: 'Jawa Timur',
     name_hazard: null,
     name_dmf_sub: 'Improve Infrastructure',
+    abstract:
+      'Energy is vital for the sustainability of modern human society. The primary sources of energy, i.e., fossil fuels, are depleting at an alarming pace. Additionally, the excessive burning of fossil fuels has resulted in health disorders and environmental pollution. In this scenario, renewable energy resources, like solar energy, offer a promising alternative to fossil fuels. Solar energy can be collected by light-absorbing materials and converted into electrical energy using solar cells (SCs). For successful commercialization, SCs must deliver high power conversion efficiency (PCE) at affordable costs. The interdisciplinary area of SC development has drawn attention from diverse science and engineering research communities. Consequently, a myriad of SC materials was produced, followed by a dramatic increase in PCEs. We reviewed all the major classes of SC materials, including inorganic semiconductors, organic semiconductors, and organic-inorganic hybrid materials with notable PCE reports. Major challenges faced by material classes and remediation strategies are discussed briefly. At present, crystalline silicon SCs retain their dominance in the commercial market with a maximum PCE of 27.6%. On the other hand, perovskite SCs, cadmium telluride SCs, organic SCs, and dye-sensitized SCs have emerged as cheaper and flexible alternatives with maximum PCEs of 25.2%, 22.1%, 17.4%, and 12.3%, respectively. Emerging solar technologies have undoubtedly an enormous scope ahead as a mainstream source of energy. © 2021 Scrivener Publishing LLC.',
   },
   {
     id: 'scps-229752',
@@ -142,6 +185,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: null,
+    abstract:
+      'Diabetes mellitus (DM) aggravates periodontitis, resulting in accelerated periodontal bone resorption. Disordered glucose metabolism in DM causes reactive oxygen species (ROS) overproduction resulting in compromised bone healing, which makes diabetic periodontal bone regeneration a major challenge. Inspired by the natural bone healing cascade, a mesoporous silica nanoparticle (MSN)-incorporated PDLLA (poly(DL-lactide))-PEG-PDLLA (PPP) thermosensitive hydrogel with stepwise cargo release is designed to emulate the mesenchymal stem cell “recruitment-osteogenesis” cascade for diabetic periodontal bone regeneration. During therapy, SDF-1 quickly escapes from the hydrogel due to diffusion for early rat bone marrow stem cell (rBMSC) recruitment. Simultaneously, slow degradation of the hydrogel starts to gradually expose the MSNs for sustained release of metformin, which can scavenge the overproduced ROS under high glucose conditions to reverse the inhibited osteogenesis of rBMSCs by reactivating the AMPK/β-catenin pathway, resulting in regulation of the diabetic microenvironment and facilitation of osteogenesis. In vitro experiments indicate that the hydrogel markedly restores the inhibited migration and osteogenic capacities of rBMSCs under high glucose conditions. In vivo results suggest that it can effectively recruit rBMSCs to the periodontal defect and significantly promote periodontal bone regeneration under type 2 DM. In conclusion, our work provides a novel therapeutic strategy of a bioinspired drug-delivery system emulating the natural bone healing cascade for diabetic periodontal bone regeneration.',
   },
   {
     id: 'scps-229847',
@@ -155,6 +200,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: 'Hazard Assesment, Improve Infrastructure, Improving Lives',
+    abstract:
+      'Polyetheretherketone (PEEK) has been an alternative material for titanium in bone defect repair, but its clinical application is limited by its poor osseointegration. In this study, a porous structural design and activated surface modification were used to enhance the osseointegration capacity of PEEK materials. Porous PEEK scaffolds were manufactured via fused deposition modeling and a polydopamine (PDA) coating chelated with magnesium ions (Mg2+) was utilized on the surface. After surface modification, the hydrophilicity of PEEK scaffolds was significantly enhanced, and bioactive Mg2+ could be released. In vitro results showed that the activated surface could promote cell proliferation and adhesion and contribute to osteoblast differentiation and mineralization; the released Mg2+ promoted angiogenesis and might contribute to the formation of osteogenic H-type vessels. Furthermore, porous PEEK scaffolds were implanted in rabbit femoral condyles for in vivo evaluation of osseointegration. The results showed that the customized three-dimensional porous structure facilitated vascular ingrowth and bone ingrowth within the PEEK scaffolds. The PDA coating enhanced the interfacial osseointegration of porous PEEK scaffolds and the released Mg2+ accelerated early bone ingrowth by promoting early angiogenesis during the coating degradation process. This study provides an efficient solution for enhancing the osseointegration of PEEK materials, which has high potential for translational clinical applications.',
   },
   {
     id: 'scps-237427',
@@ -168,6 +215,8 @@ export default [
     name_adm1: 'Papua',
     name_hazard: null,
     name_dmf_sub: 'Communication, Early Warning',
+    abstract:
+      'The detection of biomarkers at low concentrations is important in clinical diagnostic analyses and has attracted continuous research. In this work, absolute quantification of hepatitis B virus (HBV) DNA was achieved using magnetic beads with isothermal, enzyme-free DNA nanostructure for fluorescence amplification. Firstly, the DNA-functionalized bead captured the target nucleic acid in the form of sandwich hybridization, and the individual target lighted up the entire bead by isothermal web hybridization chain reaction (wHCR). After the microarray scanning, the target nucleic acids can be digitally quantified based on the Poisson statistics. Therefore, the fluorescent bead assay enabled precise detection of HBV DNA down to 5 fM level without external calibration curves. Moreover, this method not only specifically distinguished single-base mismatched sequences, but also obtained the quantitative detection of HBV DNA in serum samples. Unlike routine digital detection usually combined with complex compartment partitioning operations, the amplification structure immobilized on beads can be conducted in microcentrifuge tubes with a volume of microliter scale. This work expands the application of magnetic beads in the digital quantitative detection via enzyme-free and isothermal method. ',
   },
   {
     id: 'scps-238338',
@@ -181,6 +230,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: null,
+    abstract:
+      'Dynamic regulation of cell-extracellular matrix (ECM)-material interactions is crucial for various biomedical applications. In this study, a light-activated molecular switch for the modulation of cell attachment/detachment behaviors was established on monolayer graphene (Gr)/n-type Silicon substrates (Gr/Si). Initiated by light illumination at the Gr/Si interface, pre-adsorbed proteins (bovine serum albumin, ECM proteins collagen-1, and fibronectin) underwent protonation to achieve negative charge transfer to Gr films (n-doping) through π-π interactions. This n-doping process stimulated the conformational switches of ECM proteins. The structural alterations in these ECM interactors significantly reduced the specificity of the cell surface receptor-ligand interaction (e.g., integrin recognition), leading to dynamic regulation of cell adhesion and eventual cell detachment. RNA-sequencing results revealed that the detached bone marrow mesenchymal stromal cell sheets from the Gr/Si system manifested regulated immunoregulatory properties and enhanced osteogenic differentiation, implying their potential application in bone tissue regeneration. This work not only provides a fast and feasible method for controllable cells/cell sheets harvesting but also gives new insights into the understanding of cell-ECM-material communications. ',
   },
   {
     id: 'scps-241553',
@@ -194,6 +245,8 @@ export default [
     name_adm1: 'Jawa Barat',
     name_hazard: null,
     name_dmf_sub: 'Early Warning, Vulnerability Assesment',
+    abstract:
+      "Baker's yeast is an attractive host with established safety and stability characteristics. Many yeast-based biosensors have been developed, but transmembrane signal transduction has not been used to detect membrane-impermeable substances using antigen-antibody interactions. Therefore, we created Patrol Yeast, a novel yeast-based immunosensor of various targets, particularly toxic substances in food. A membrane-based yeast two-hybrid system using split-ubiquitin was successfully used to detect practically important concentration ranges of caffeine and aflatoxins using separated variable regions of an antibody. Moreover, enterohemorrhagic Escherichia coli O157 was detected using a specific single-chain antibody, in which Zymolyase was added to partially destroy the cell wall. The incorporation of secreted Cypridina luciferase reporter further simplified the signal detection procedures without cell lysis. The methodology is more cost-effective and faster than using mammalian cells. The ability to detect various targets renders Patrol Yeast a valuable tool for ensuring food and beverage safety and addressing other environmental and technological issues.",
   },
   {
     id: 'scps-242449',
@@ -207,6 +260,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: 'Policy',
+    abstract:
+      'BACKGROUND: Studies have found that naringin affects bone metabolism directly through Wnt, transforming growth factor β, MAPK signaling pathway, and osteoclast signaling pathway, as well as indirectly through P13K-Akt and vascular endothelial growth factor signaling pathway. Naringin can promote bone repair and retard osteoporosis. OBJECTIVE: To investigate the effect of naringin on the proliferation and osteogenic differentiation of osteoblasts by targeting the activation of connexin 43/ ERK1 signaling pathway through down-regulation of miR-206. METHODS: Rat osteoblasts (ROB cells) were treated and cultured with different concentrations of naringin (1, 10, 100 mg/L and 1, 10 g/L), and the cell proliferation was detected by cell counting kit-8 assay. Naringin at 100 mg/L and 1, 10 g/L were used for subsequent experiments. Osteoblasts with non-drug culture were used as controls. RT-qPCR was used to detect the relative expression levels of miR-206, connexin 43 and ERK1 mRNAs in ROB cells to verify their targeting relationship. Western blot was used to detect the protein expression levels of ERK1/2 and P-ERK in ROB cells. Alkaline phosphatase activity and calcification ability in ROB cells were observed by alkaline phosphatase staining and alizarin red staining, respectively. RESULTS AND CONCLUSION: Naringin significantly promoted the proliferation activity of ROB cells (P < 0.05). The absorbance value and relative proliferation rate of ROB cells increased as the administration concentration of naringin increased in a certain range. When the mass concentration was 1 g/L, the cell proliferation activity was the strongest. Naringin significantly inhibited the expression of miR-206 mRNA in ROB cells and promoted the expression of connexin 43 mRNA and ERK1/2 and P-ERK protein (P < 0.05). Naringin could significantly promote the activity and expression of alkaline phosphatase and the level of cellular calcification in ROB cells (P < 0.05). Moreover, naringin at 1 g/L showed the best effect. To conclude, naringin can target and activate the connexin 43/ ERK1 signaling pathway by down-regulating the expression of miR-206, thereby promoting the proliferation and osteogenic differentiation of ROB cells. ',
   },
   {
     id: 'scps-247437',
@@ -220,6 +275,8 @@ export default [
     name_adm1: 'Kepulauan Bangka Belitung',
     name_hazard: null,
     name_dmf_sub: null,
+    abstract:
+      'The objective of this study was to investigate the diversity of bacteria in the rhizosphere of Acacia grow in the forest and different ages of revegetated land and non-rhizospheric bacteria from active tin mining soil on Bangka Island with a metagenomic approach and to investigate its relationship with physicochemical properties of the soil and its metal content. 17 species/genera were found in the four fields, and Bradyrhizobium is the dominant genus. Bacterial communities of the forest (more than 5 years in revegetated post-tin mining land containing C, N, P, and Fe) are Paraburkholderia sp., Bacillus sp., Candidatus-Xiphinematobacter, and Bacterium enrichment. The physicochemical properties of soil from less than 5 years of revegetated contain Cu, Cr, and Mo, and the dominant species in this soil were Bulkhorderia sp., Bacillus lehensis, B. fordii, B. thermolactis, Chloroflexi bacterium, and Thermonosporaceae bacterium. The physicochemical properties of soil from the mining were dominated by Cd and Ni, and the dominant species in this soil were Sinomonas atrocyanea.',
   },
   {
     id: 'scps-247482',
@@ -233,6 +290,8 @@ export default [
     name_adm1: 'Sulawesi Selatan',
     name_hazard: null,
     name_dmf_sub: 'Hazard Assesment, Risk Assesment',
+    abstract:
+      'Evidence concerning the associations of ambient air pollution exposure with bone mineral density and osteoporosis has been mixed. We conducted cross-sectional and prospective analysis of the associations between air pollution exposure and osteoporosis using data from UK Biobank study. Estimated bone mineral density (eBMD) of each participant at baseline survey was calculated using quantitative ultrasound data, and incident osteoporosis cases were identified during the follow-up period according to health-related records. Air pollution concentrations were assessed using land use regression models. We fitted multivariable linear and logistic regression models to estimate the associations of air pollution with eBMD and osteoporosis prevalence at baseline. We applied cox proportional hazard regression models to assess the relationships between air pollution and osteoporosis incidence. Among the 341,311 participants at baseline, higher air pollution exposure was associated with lower eBMD levels and increased odds of osteoporosis prevalence. For example, an IQR increase in PM2.5, PM2.5 absorbance, PM10, NO2 and NOx levels were associated with 0.0018 (95% CI: 0.0012, 0.0023) to 0.0052 (95% CI: 0.0046, 0.0058) g/cm2 decrease in eBMD. A total of 330,988 participants without osteoporosis were followed up for an average of 12.0 years. We identified 8105 incident osteoporosis cases (456 cases with pathological fracture and 7634 cases without pathological fracture) during the follow-up. The hazard ratios for an interquartile range increase in PM2.5, PM2.5 absorbance, PM10, NO2 and NOx were 1.09 (95% CI: 1.06, 1.12), 1.04 (95% CI: 1.02, 1.07), 1.04 (95% CI: 1.01, 1.07), 1.07 (95% CI: 1.04, 1.10), and 1.06 (95% CI: 1.03, 1.09), respectively. Our study suggests that ambient air pollution might be a risk factor of decreased bone mineral density and osteoporosis incidence. ',
   },
   {
     id: 'scps-247484',
@@ -246,6 +305,8 @@ export default [
     name_adm1: 'Lampung',
     name_hazard: null,
     name_dmf_sub: 'Awareness, Hazard Assesment, Impact Assesment, Improve Infrastructure, Risk Assesment, Saving Life, Vulnerability Assesment',
+    abstract:
+      'Metro systems have become high-vulnerability entities due to the increasing frequency and severity of urban flooding. Flood events may cause cascading failure to metro systems; therefore, exploring the cascading failure risk of the metro system is a prerequisite for urban flooding prevention and risk management. This study presented a Rank-Order Centroid (ROC) based CIA-ISM (Cross-Impact Analysis, and Interpretive Structural Modeling) method to accurately assess the reliability of emergency management in metro systems under extreme rainfall conditions. We applied this approach to a metro flooding case in Zhengzhou on July 20, 2021. The reliability results show that efficient rescue and timely shutdown notification are the most critical causal events in the cascading failure scenarios. The events of system vulnerability that have the most significant impact on casualties, property losses, and social panic are, respectively, timely notification of the shutdown, humanitarian aid, and public opinion guidance. In forecast scenarios with emergency management measures in effect, the probability of casualties, property losses, and social panic decrease by 96.3%, 58.58%, and 64.28%, respectively. Moreover, a comparison with Bayesian Network (BN) model verified the effectiveness of the ROC-based CIA-ISM approach. Based on the study, we suggest the metro companies release a timely notification of the shutdown. This study can provide scientific data for decision-makers to reasonably develop emergency strategies, significantly reducing flood losses and promoting cities’ sustainable development.',
   },
   {
     id: 'scps-247558',
@@ -259,6 +320,8 @@ export default [
     name_adm1: 'Papua',
     name_hazard: null,
     name_dmf_sub: 'Recovery',
+    abstract:
+      'The study aimed at monitoring the influence of agrometeorological factors on the flow of nectar in the bee hive during the flowering of black locust (Robinia pseudoacacia). The study was conducted in 2021 growing season in the Northeaster Bulgaria in village Brestovica. Geographical location of the experimental region is 43°32′4.02″N and 25°45′14.10″E at an altitude of 223 m. The experimental apiary consisted of 122 bee colonies housed in Dadant-Blatt hives. The bees are of the species (Apis mellifera macedonica). During the study period of external factors are monitored, as outside air temperature (Tair), ℃ and air humidity (Hair) %, atmospheric pressure (Ap) hPa, soil moisture (Sm), % at 20 cm depth, soil temperature (St), ℃ at 10 cm depth, solar radiation (Sr) w m−2, wind speed (Ws), m s−1, precipitated rainfall (R), l m−2. Also the air temperature inside (Tin) the hive was measured. The nectar flow is determined based on the changes in hive weight (Y). The real-time data were available via a web-based application Meteobot®.The results show that the 99% from the alteration of the Y is due to the factors days, time for reporting the indicators, Hair, Tair, Sm and Dp. Changes in the weight of the hive due to the nectar secretion Y is highest at the outside air temperature Tair ≈ 27 ℃, air humidity Hair ≈ 48% and soil moisture Sm ≈ 79%. It is insignificant the influence of the factors St; Sr; Ws; Ap and Tin.',
   },
   {
     id: 'scps-249338',
@@ -272,6 +335,8 @@ export default [
     name_adm1: 'Sulawesi Barat',
     name_hazard: null,
     name_dmf_sub: 'Impact Assesment',
+    abstract:
+      "Emissions of the potent greenhouse gas nitrous oxide (N2O) from aquaculture remain a large knowledge gap in the global N2O budget. The water column and the sediment of aquaculture ponds present very different environmental conditions, but their relative contributions to N2O production and emission are poorly resolved. We sampled three aquaculture ponds in the Min River Estuary in southeastern China monthly throughout the farming season. Based on the dissolved N2O concentrations within the water column and in sediment porewater, we calculated the diffusive N2O fluxes across the water-atmosphere interface (WAI) and sediment-water interface (SWI). The diffusive N2O flux averaged 216.9 nmol m−2 h−1 across WAI and 16.0 nmol m−2 h−1 across SWI. The estimated N2O production rate under steady-state condition was 0.13 nmol L−1 h−1 in the water column and 1.07 nmol L−1 h−1 in sediment porewater. Hence, the water column compartment and the sediment compartment of the aquaculture ponds played different roles in N2O dynamics. Based on our data, it is calculated that China's coastal aquacultural ponds would emit 0.2 Gg N2O yr−1, or less than 1% of all aquaculture N2O emission in China. Therefore, coastal shrimp aquaculture has a relative minor climate impact compared to other aquaculture operations. Future studies should examine the role of N-cycling functional genes on N2O production and the mechanisms regulating N2O emission from aquaculture ecosystems. ",
   },
   {
     id: 'scps-249420',
