@@ -11,6 +11,11 @@ function Publications() {
   const records = DataItem.slice(firstIndex, lastIndex);
   const npage = Math.ceil(DataItem.length / recordsPerPage) / 2;
   const numbers = [...Array(npage + 1).keys()].slice(1);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
 
   function prevPage() {
     if (currentPage !== firstIndex) {
@@ -39,30 +44,19 @@ function Publications() {
           <div className="flex flex-col">
             <ul className="flex justify-center">
               <li>
-                <a
-                  href="#"
-                  className="relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  onClick={prevPage}
-                >
+                <a className={`relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 ${isActive ? 'active bg-gray-200' : ''}`} onClick={prevPage}>
                   Prev
                 </a>
               </li>
               {numbers.map((n, i) => (
                 <li className={`${currentPage === n ? 'active' : ''}`} keys={i}>
-                  <a
-                    className="relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                    onClick={() => changeCPage(n)}
-                  >
+                  <a className={`relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 ${isActive ? 'active bg-gray-500' : ''}`} onClick={() => changeCPage(n)}>
                     {n}
                   </a>
                 </li>
               ))}
               <li>
-                <a
-                  href="#"
-                  className="relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                  onClick={nextPage}
-                >
+                <a className={`relative block rounded bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 ${isActive ? 'active' : ''}`} onClick={nextPage}>
                   Next
                 </a>
               </li>
