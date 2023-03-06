@@ -2,14 +2,14 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Subscription from '../components/Subscription';
-import PublicationData from '../components/PublicationData';
+import Publications from '../components/Publications';
+
 function LandingPage() {
   return (
     <div>
       <Hero />
-      <PublicationData />
+      <Publications />
       <Subscription />
-
       <Footer />
     </div>
   );
