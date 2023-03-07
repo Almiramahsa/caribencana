@@ -22,7 +22,7 @@ function DisplayMap() {
   }
 
   return (
-    <MapContainer center={center} zoom={zoom} style={{ height: '100vh' }} maxBounds={indonesiaMap} maxBoundsViscosity={1.0}>
+    <MapContainer center={center} zoom={zoom} style={{ height: '70vh' }} scrollWheelZoom={false} maxBounds={indonesiaMap} maxBoundsViscosity={1.0}>
       <TileLayer url="https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=o13sSPoD0cBH5pCHCAjP" attribution="<attribution>" />
       {renderMarkers()}
     </MapContainer>

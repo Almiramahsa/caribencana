@@ -1,7 +1,7 @@
 import React from 'react';
 import { IdkuItem } from '../data/IdkuItem';
 import { SimpleGrid, Card, Text, CardBody, CardFooter } from '@chakra-ui/react';
-import { BsPerson } from 'react-icons/bs';
+// import { BsPerson } from 'react-icons/bs';
 function Test() {
   return (
     <>
@@ -22,7 +22,7 @@ function Test() {
                   <p className="mb-3">{item.publish}</p>
 
                   <div className="inline-flex items-center gap-4">
-                    <BsPerson w={20} className="font-bold" />
+                    {/* <BsPerson w={20} className="font-bold" /> */}
                     <span className="text-md font-bold">authors :</span>
                   </div>
                   <p className="text-md font-base">{item.authors}</p>

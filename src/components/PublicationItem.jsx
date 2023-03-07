@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@chakra-ui/react';
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react';
-import { HiOutlineLink } from '@react-icons/all-files/Hi/HiOutlineLink';
+// import { HiOutlineLink } from '@react-icons/all-files/Hi/HiOutlineLink';
 import { Link } from 'react-router-dom';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
@@ -53,7 +53,7 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
                 <CopyToClipboard text={link || ''} onCopy={handleCopyLink}>
                   <Link to={link || '#'}>
                     <Button variant="outline">
-                      <HiOutlineLink />
+                      {/* <HiOutlineLink /> */}
                       <span className="ml-2">Sources</span>
                     </Button>
                   </Link>
