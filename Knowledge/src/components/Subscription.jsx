@@ -1,13 +1,13 @@
 import React from 'react';
 import cari from '../assets/cari-logo.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Subscription() {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // TODO: lakukan sesuatu dengan email yang di-submit
     console.log('Email yang di-submit: ', email);
   };
 
@@ -17,9 +17,9 @@ function Subscription() {
   return (
     <div className="container px-4 grid grid-cols-1 md:grid-cols-2 gap-4 m-4  ">
       <div className="container justify-center py-2 mx-10 sm:mx-16">
-        <a href="https://caribencana.id/">
+        <Link href="https://caribencana.id/">
           <img width="80" height="80" src={cari} alt="CARI Website"></img>
-        </a>
+        </Link>
         <form onSubmit={handleSubmit} className="py-4">
           <div className="flex flex-col items-start gap-2">
             <p htmlFor="email" className="text-sm font-medium md:text-md md:w-1/2 text-gray-700">

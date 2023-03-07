@@ -1,25 +1,41 @@
-import { Box, Stack, Heading, Text } from '@chakra-ui/react';
-import PublicationItem from './PublicationItem';
-import DataItem from '../data/DataItem';
-function StackEx() {
+import React from 'react';
+import { IdkuItem } from '../data/IdkuItem';
+import { SimpleGrid, Card, Text, CardBody, CardFooter } from '@chakra-ui/react';
+import { BsPerson } from 'react-icons/bs';
+function Test() {
   return (
-    <div className="container mx-auto px-4 ">
-      <Stack spacing={8} direction="row">
-        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }}>
-          <Heading fontSize="xl">Plan Money</Heading>
-          <Text mt={4}>The future can be even brighter but a goal without a plan is just a wish</Text>
-        </Box>
-        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '70%' }}>
-          <Heading fontSize="xl">Save Money</Heading>
-          <div>
-            {DataItem.map((data) => (
-              <PublicationItem id={data.id} publisher={data.publisher} title={data.title} authors={data.authors} description={data.description}></PublicationItem>
-            ))}
-          </div>
-        </Box>
-      </Stack>
-    </div>
+    <>
+      <div className="mx-20 my-20">
+        <div>
+          <h1 className="text-2xl font-semibold mb-4">Special Brief Repository</h1>
+          <p className="text-md font-base mb-4">The special brief is one of the knowledge products produced by CARI! to provide an overview of the knowledge landscape based on certain themes and other major events.</p>
+        </div>
+        <SimpleGrid spacing={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
+          {IdkuItem.map((item) => (
+            <Card key={item.id} my={5}>
+              <CardBody>
+                <Text>
+                  <h2 className="text-lg font-semibold mb-4">
+                    {item.id} - {item.title}
+                  </h2>
+
+                  <p className="mb-3">{item.publish}</p>
+
+                  <div className="inline-flex items-center gap-4">
+                    <BsPerson w={20} className="font-bold" />
+                    <span className="text-md font-bold">authors :</span>
+                  </div>
+                  <p className="text-md font-base">{item.authors}</p>
+                </Text>
+              </CardBody>
+              <CardFooter>
+                <a href={item.link}>Read More</a>
+              </CardFooter>
+            </Card>
+          ))}
+        </SimpleGrid>
+      </div>
+    </>
   );
 }
-
-export default StackEx;
+export default Test;

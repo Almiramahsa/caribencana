@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import MapHero from './leaflet/MapHero';
 import cari from '../assets/cari-logo.png';
+import DisplayMap from './DisplayMap';
 function Hero() {
   const [toggle, setToggle] = useState(false);
 
@@ -57,7 +57,7 @@ function Hero() {
         </div>
       </nav>
       <div className="relative top-0 left-0 h-500 w-full z-10 outline-none">
-        <MapHero />
+        <DisplayMap />
       </div>
       <button className={`absolute top-2 right-2 z-20 bg-gray-900 hover:bg-gray-800  transition transform rounded-md focus:outline-none ${toggle ? 'hidden' : 'block'}`} onClick={toggleNav}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

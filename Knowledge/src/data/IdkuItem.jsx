@@ -1,10 +1,11 @@
-export default [
+export const IdkuItem = [
   {
     id: 'IDKU February 2023 ',
     title: "Women's Participation in Disaster Risk Reduction in Indonesia",
     publish: '22 February 2023',
     authors: 'Ainur Ridho, Janine Febe, Fega Pangestika, Dewa Putu AM, Radikal Lutfiardi, Atik Nur A, Ridwan Firdaus, Ridowan, Anarita W, Rifa Atsari, Yos Malole, Mizan Bisri',
     link: 'https://knowledge.caribencana.id/special_brief/idku-feb-23',
+    pdf: 'https://assets.caribencana.id/uploads/documents/20230222055131-IDKU_FEBRUARY_2023-[ID]-(1).pdf',
   },
   {
     id: 'IDKU January 2023',
@@ -12,6 +13,7 @@ export default [
     publish: '30 January 2023',
     authors: 'Ainur Ridho, Dewa Putu AM, Atik Nurul A, Mizan Bisri, Radikal L, Ridwan Firdaus, Yos Malole, Rifa Atsari, Anarita W',
     link: 'https://knowledge.caribencana.id/special_brief/idku-jan-23',
+    pdf: 'https://assets.caribencana.id/uploads/documents/20230222054806-IDKU_FEBRUARY_2023-[EN]-(4).pdf',
   },
   {
     id: 'IDKU December 2022',
@@ -19,6 +21,7 @@ export default [
     publish: '25 December 2022',
     authors: 'Radikal Lutfiardi, Ainur Ridho, Atik Nur Aini, Afifah Hanum A, Dewa Putu, Mizan Bisri, Yos Malole, Rifa Atsari, Ridwan Firdaus, Anarita W',
     link: 'https://knowledge.caribencana.id/special_brief/brief-december-2022',
+    pdf: 'https://assets.caribencana.id/uploads/documents/20230201023953-IDKU_JANUARI_2023-[ID]-(1).pdf',
   },
   {
     id: 'IDKU November 2022',

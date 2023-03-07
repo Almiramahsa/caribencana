@@ -1,10 +1,13 @@
 import React from 'react';
-import BriefItem from '../components/BriefItem';
+import Briefs from '../components/BriefItem';
+import Navbar from '../components/Navbar';
+import Test from '../components/Test';
 
 function SpecialBrief() {
   return (
     <div>
-      <BriefItem />
+      <Navbar />
+      <Test />
     </div>
   );
 }
