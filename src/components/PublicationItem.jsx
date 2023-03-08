@@ -67,26 +67,32 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
           <ModalHeader className="mt-10">{title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <p>
-              <strong>Authors:</strong> {authors}
-            </p>
+            <div>
+              <strong>Authors</strong>
+              <p>{authors}</p>
+            </div>
 
-            <p>
-              {abstractContent}
-              {abstract.length > 100 && (
-                <Link size="sm" onClick={() => setShowMore(!showMore)} className="text-orange-500 mx-4">
-                  {showMore ? 'Show less' : 'Read more'}
-                </Link>
-              )}
-            </p>
+            <div className="mt-10">
+              <p>
+                <strong>Abstract</strong>
+              </p>
+              <p>
+                {abstractContent}
+                {abstract.length > 100 && (
+                  <Link size="sm" onClick={() => setShowMore(!showMore)} className="text-orange-500 mx-4">
+                    {showMore ? 'Show less' : 'Read more'}
+                  </Link>
+                )}
+              </p>
+            </div>
 
-            <div className="flex flex-row items-center mt-10 gap-2  w-full">
-              <div className="border bordered-md rounded-md px-4 py-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 w-full">
+              <div class="border bordered-md rounded-md px-4 py-4">
                 <strong>DOI: </strong>
                 <p>{doi}</p>
               </div>
 
-              <div className="border bordered-md rounded-md px-4 py-4">
+              <div class="border bordered-md rounded-md px-4 py-4">
                 <strong>Journal: </strong>
                 <p>{publisher}</p>
               </div>
