@@ -50,7 +50,7 @@ export default [
     link: 'http://garuda.kemdikbud.go.id/documents/detail/2297033',
     name_adm1: 'Bali',
     name_hazard: null,
-    name_dmf_sub: null,
+    name_dmf_sub: 'Hazard Assesment, Risk Assesment',
     abstract:
       'Research has been done about the relocation of earthquake hypocenter position, seismic wave local velocity and correction of seismic wave recording station at the Abang-Culik Fault area according to coordinate 115,25°-115,75° BT and 8,00°-8,60° LS. Data which was used on this research was the earthquake data that occur in the 2015-2020 period. The research was conducted using the coupled velocity-hypocenter method. From the relocation result, the position of the earthquake hypocenter shifted, which initially spread to become more concentrated in the fault plane area. The local velocity decreasing a lot in the 3rd layer which was influenced by the presence of the Mount Agung magma pocket in that area. The correction of Station shown that only 1 station has a negative value of delay time, namely IGBI station while the other 13 stations show a positive value of delay time.',
   },
@@ -65,7 +65,7 @@ export default [
     link: 'http://garuda.kemdikbud.go.id/documents/detail/2368680',
     name_adm1: 'Bali',
     name_hazard: null,
-    name_dmf_sub: null,
+    name_dmf_sub: 'Hazard Assesment, Risk Assesment',
     abstract:
       'The history of earthquakes records that Bali was once rocked by deadly earthquakes, one of which was the Seririt Earthquake of July 14, 1976 in North Bali. This research aims to find out the spread of hypocenter and relocation of aftershocks in Seririt District on November 14, 2019. Relocation is carried out using the Double Difference method, in accordance with the straightness of seririt fault. The data used is secondary data catalog seririt Bali region 113.478–115.181 BT and 8.357–7.894 LS in 2019. The relocation results showed that the spread of the hypocenter was more collected and was at a depth of 6-25 km spread in all directions. This earthquake occurred due to the activity of the fault up with the dominant horizontal fault moving towards the left (Oblique Fault) in accordance with the straightness of the seririt fault.',
   },
@@ -79,7 +79,7 @@ export default [
     lang: 'en',
     link: 'http://garuda.kemdikbud.go.id/documents/detail/2876184',
     name_adm1: 'Maluku',
-    name_hazard: null,
+    name_hazard: 'Hazard Assesment, Risk Assesment',
     name_dmf_sub: 'Impact Assesment, Improve Infrastructure, Restoring',
     abstract:
       'The usefulness of the Dhuti dam and its importance for crop irrigation at the Balaghat station, located on the Waingang River in Madhya Pradesh, India, has been the focus of research on rainfall fluctuations in the Wainganga sub-basin. Wainganga is the largest peninsular river in India. Wainganga River flows for 635.40 kilometers. Until its confluence with the Wardha River, the Wainganga River has a catchment area of 51,000 km2. The basin spans the five districts of Maharashtra and three districts of Madhya Pradesh. The Wainganga Basin is also mentioned in "The Jungle Book" by the famous writer Rudyard Kipling. The Wainganga Basin is known for the production of rice and, more specifically, Chinour. Balaghat "Chinour" rice obtained G-Tag certificate in 2021, and is now internationally renowned and exported. Rice crops are irrigated mainly by water from the Dhuti dam throughout the year. The dam is very important for the development of rice crops in the region. Sir Jorge, a British engineer, built the dam between 1911 and 1921. It is one of the oldest earthen dams in India, sealed with lime mortar. Floods have affected the cultivated area and water demand in the Balaghat district area for the past few years. The intensity and duration of rainfall varies from year to year along with changes in climatic conditions. The effect of flooding in a given season, as well as basin factors such as variations in rainfall, coefficient of variance, and agricultural damage were examined.',

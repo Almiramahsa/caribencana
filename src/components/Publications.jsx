@@ -1,7 +1,6 @@
 import ReactPaginate from 'react-paginate';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
-import { transition } from '@chakra-ui/react';
 import DataItem from '../data/DataItem';
 import { useState } from 'react';
 import PublicationItem from './PublicationItem';
@@ -38,12 +37,12 @@ function Publications() {
 
   return (
     <motion.div variants={paginationVariants} initial="hidden" animate="visible">
-      <Stack spacing={8} direction={{ base: 'column', sm: 'column', md: 'row' }} flexWrap={{ base: 'wrap', sm: 'wrap', md: 'nowrap' }}>
-        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }} flex="1">
+      <Stack spacing={8} direction={{ base: 'column', sm: 'column', md: 'row' }} flexWrap={{ base: 'wrap', sm: 'wrap', md: 'nowrap' }} className="mx-5 mt-5 ">
+        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }} flex="1" borderRadius="md">
           <Heading fontSize="xl">Filter</Heading>
           <FilterBar />
         </Box>
-        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '70%' }} flex="2">
+        <Box p={5} borderWidth="1px" width={{ base: '100%', md: '70%' }} flex="2" borderRadius="md">
           <Heading fontSize="xl">List of Research Articles</Heading>
           <ReactPaginate
             breakClassName={'flex items-center justify-center w-10 h-10'}
@@ -65,7 +64,18 @@ function Publications() {
             onPageChange={handlePageClick}
           />
           {records.map((data) => (
-            <PublicationItem key={data.id} id={data.id} publisher={data.publisher} title={data.title} authors={data.authors} abstract={data.abstract} doi={data.doi} source={data.link} />
+            <PublicationItem
+              key={data.id}
+              id={data.id}
+              publisher={data.publisher}
+              title={data.title}
+              authors={data.authors}
+              abstract={data.abstract}
+              doi={data.doi}
+              source={data.link}
+              name_adm1={data.name_adm1}
+              name_dmf_sub={data.name_dmf_sub}
+            />
           ))}
         </Box>
       </Stack>
