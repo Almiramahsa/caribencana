@@ -19,3 +19,7 @@ body {
   --cari-colors-orange-100: '#FDE1D2';
   --chakra-colors-orange-500: '#F57133';
 }
+.custom-marker-icon {
+  justify-content: center;
+  align-items: center;
+}

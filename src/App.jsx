@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
 import LandingPage from './pages/LandingPage';
 import SpecialBrief from './pages/SpecialBrief';
+import About from './pages/About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/special-brief" element={<SpecialBrief />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Box>
       </ChakraProvider>
