@@ -3,7 +3,7 @@ export default [
     id: 'doaj-98870',
     title: 'Ecological and human health implications of mercury contamination in the coastal water',
     authors:
-      'A. Mallongi (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia), A.U. Rauf (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia), R.D.P. Astuti (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia), S. Palutturi (Department of Health Policy and Administration, Faculty of Public  Health, Hasanuddin University, Indonesia.), H. Ishak (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia)',
+      'A. Mallongi (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia) dan A.U. Rauf (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia) dan R.D.P. Astuti (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia) dan S. Palutturi (Department of Health Policy and Administration, Faculty of Public Health, Hasanuddin University, Indonesia) dan H. Ishak (Department of Environmental Health, Faculty of Public Health, Hasanuddin University, Indonesia)',
     doi: '10.22034/gjesm.2023.02.06',
     publisher: 'Global Journal of Environmental Science and Management',
     year: 2023,

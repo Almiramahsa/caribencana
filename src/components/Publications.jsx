@@ -65,7 +65,7 @@ function Publications() {
             onPageChange={handlePageClick}
           />
           {records.map((data) => (
-            <PublicationItem key={data.id} id={data.id} publisher={data.publisher} title={data.title} authors={data.authors} description={data.description} />
+            <PublicationItem key={data.id} id={data.id} publisher={data.publisher} title={data.title} authors={data.authors} abstract={data.abstract} doi={data.doi} source={data.link} />
           ))}
         </Box>
       </Stack>
