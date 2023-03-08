@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Stack, Heading, Text } from '@chakra-ui/react';
 import PublicationItem from './PublicationItem';
 import DataItem from '../data/DataItem';
+import FilterBar from './FilterBar';
 
 function Publications() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,10 +35,11 @@ function Publications() {
   }
 
   return (
-    <div className="container mx-auto px-4 mt-0.5">
+    <div className="container mx-auto px-4 mt-10">
       <Stack spacing={8} direction={{ base: 'column', sm: 'column', md: 'row' }} flexWrap={{ base: 'wrap', sm: 'wrap', md: 'nowrap' }}>
         <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }} flex="1">
           <Heading fontSize="xl">Filter</Heading>
+          <FilterBar />
         </Box>
         <Box p={5} borderWidth="1px" width={{ base: '100%', md: '70%' }} flex="2">
           <Heading fontSize="xl">List of Research Articles</Heading>
