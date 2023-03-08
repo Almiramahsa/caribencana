@@ -45,12 +45,16 @@ function Footer() {
         <div className="mb-8">
           <h3 className="mb-4 w-1/2 sm:w-full  ">Due to COVID-19, all staff and associates of CARI! are working remotely.</h3>
           <h3 className="text-gray-500 flex items-center mr-4 mb-2">
-            <EmailIcon />
+            <span className="mr-4">
+              <EmailIcon />
+            </span>
             <a href="info@caribencana.id">info@caribencana.id</a>
           </h3>
 
           <h3 className="text-gray-500 flex items-center  ">
-            <LocalPhoneIcon />
+            <span className="mr-4">
+              <LocalPhoneIcon />
+            </span>
             (+62) 81-1203-0108
           </h3>
         </div>

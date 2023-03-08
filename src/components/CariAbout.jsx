@@ -3,11 +3,11 @@ import bgCari from '../assets/bg-cari.png';
 
 function CariAbout() {
   return (
-    <div className="flex flex-wrap items-center justify-center lg:justify-between  px-4 py-16 mt-10 mx-16">
-      <div className="w-full lg:w-1/2">
+    <div className="flex flex-row items-center justify-center lg:justify-between px-4 py-16  mx-4">
+      <div className="w-full lg:w-1/2 mx-2">
         <img src={bgCari} alt="caribencana" className="w-full" />
       </div>
-      <div className="w-full lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 ">
+      <div className="w-full lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 mx-4 ">
         <h1 className="text-4xl font-bold text-orange-500 mb-4 mt-5">
           <span className="text-gray-500 font-normal">About </span>Cari!
         </h1>
