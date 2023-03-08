@@ -31,7 +31,8 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
         <p className="text-gray-800 dark:text-gray-200 mb-5">{year}</p>
         <p className="text-gray-800 dark:text-gray-200 mb-5">{lang}</p>
         <div>
-          <Button
+          <button
+            className="h-12 w-36 bg-orange-500 mt-5 mx-auto text-white rounded-md   hover:bg-orange-400 hover:text-white focus:outline-none"
             onClick={() => {
               onOpen();
               setCopied(false);
@@ -40,7 +41,7 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
             variant="outline"
           >
             Details
-          </Button>
+          </button>
 
           <Modal isOpen={isOpen} onClose={handleModalClose} onExited={() => setCopied(false)}>
             <ModalOverlay />

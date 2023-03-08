@@ -34,10 +34,7 @@ function Subscription() {
               onChange={handleChange}
             />
 
-            <button
-              type="submit"
-              className=" py-2 my-2 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
+            <button type="submit" className="h-12 w-36 bg-orange-500 mt-5 text-white rounded-md  hover:bg-orange-400 hover:text-white focus:outline-none">
               Subscribe
             </button>
           </div>
