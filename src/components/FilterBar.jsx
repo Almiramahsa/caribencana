@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
 import { Stack, Checkbox, CheckboxGroup } from '@chakra-ui/react';
-import { Input, Select, FormControl, FormLabel, FormErrorMessage, FormHelperText } from '@chakra-ui/react';
+import { Button, Input, Select, FormControl, FormLabel, FormErrorMessage, FormHelperText } from '@chakra-ui/react';
 import DataItem from '../data/DataItem';
 import { IdkuItem } from '../data/IdkuItem';
 
@@ -140,7 +140,7 @@ function FilterBar() {
               </FormControl>
             </AccordionPanel>
           </AccordionItem>
-          <button type="submit">Apply</button>
+          <button className="h-12 w-36 bg-orange-500 mt-10 mx-auto text-white rounded-full   hover:bg-orange-400 hover:text-white focus:outline-none">Apply Filter</button>
         </form>
       </Accordion>
     </div>
