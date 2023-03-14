@@ -3,7 +3,7 @@ import bgCari from '../assets/bg-cari.png';
 
 function CariAbout() {
   return (
-    <div className="flex flex-row items-center justify-center lg:justify-between px-4 py-16  mx-4">
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center px-4  mx-4">
       <div className="w-full lg:w-1/2 mx-2">
         <img src={bgCari} alt="caribencana" className="w-full" />
       </div>

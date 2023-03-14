@@ -62,22 +62,27 @@ function Footer() {
           <span className="block uppercase text-black text-sm font-semibold mb-2">Useful Links</span>
           <ul className="justify-left text-left">
             <li>
-              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="https://caribencana.id/">
+              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="/">
                 Home
               </a>
             </li>
             <li>
-              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="https://knowledge.caribencana.id/">
+              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="/">
                 Knowledge Portal
               </a>
             </li>
             <li>
-              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="https://knowledge.caribencana.id/publications">
+              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="#">
                 Publications
               </a>
             </li>
             <li>
-              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="https://caribencana.id/cari">
+              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="/special-brief">
+                Special Brief
+              </a>
+            </li>
+            <li>
+              <a className="text-gray-800 hover:text-orange-500 font-base block pb-2 text-sm" href="/about">
                 About
               </a>
             </li>

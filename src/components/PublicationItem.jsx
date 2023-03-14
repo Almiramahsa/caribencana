@@ -34,7 +34,7 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
           <p>{authors}</p>
         </div>
         <hr />
-        <div className="flex flex-row items-center  gap-2  w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-10 w-full">
           <div className=" px-4 py-4">
             <strong>Location: </strong>
             <p>{name_adm1}</p>

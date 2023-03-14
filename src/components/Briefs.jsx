@@ -17,9 +17,11 @@ function Briefs() {
   }, []);
 
   const properties = {
-    duration: 4000,
+    duration: 5000,
     transitionDuration: 500,
+    infinite: true,
     indicators: true,
+    arrows: true,
   };
   return (
     <div className="mx-20 my-20">
@@ -29,15 +31,15 @@ function Briefs() {
         </div>
       ) : (
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center px-4  mx-4">
-            <Slide {...properties}>
-              <div className="slide">
-                <img src={bgIdku1} alt="idku caribencana" className="hover:scale-150 w-full md:h-full object-cover" />
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center px-4 mx-4">
+            <Slide {...properties} style={{ width: '80%', margin: '0 auto' }}>
+              <div className="slide  hidden md:block">
+                <img src={bgIdku1} alt="idku caribencana" className="hover:scale-150 w-full md:h-full object-cover md:" />
               </div>
-              <div className="slide">
+              <div className="slide hidden md:block">
                 <img src={bgIdku2} alt="idku caribencana" className="hover:scale-150 w-full md:h-full object-cover" />
               </div>
-              <div className="slide">
+              <div className="slide hidden md:block">
                 <img src={bgIdku3} alt="idku caribencana" className="hover:scale-150 w-full md:h-full object-cover" />
               </div>
             </Slide>
@@ -45,7 +47,7 @@ function Briefs() {
               <h1 className="text-4xl font-bold text-orange-500 mb-4 mt-5">
                 <span className="text-gray-500 font-normal">Special </span>Brief
               </h1>
-              <p className="text-gray-700 text-normal mb-6">The special brief is one of the knowledge products produced by CARI! to provide an overview of the knowledge landscape based on certain themes and other major events.</p>
+              <p className="text-gray-700 text-normal mb-6 sm:w-full">The special brief is one of the knowledge products produced by CARI! to provide an overview of the knowledge landscape based on certain themes and other major events.</p>
             </div>
           </div>
 
