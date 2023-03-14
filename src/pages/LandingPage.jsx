@@ -7,6 +7,7 @@ function LandingPage() {
   return (
     <div>
       <Hero />
+
       <Publications />
       <Subscription />
       <Footer />

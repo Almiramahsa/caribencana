@@ -23,7 +23,7 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
     onClose();
   };
 
-  const abstractContent = showMore ? abstract : `${abstract.slice(0, maxLength)}...`;
+  const abstractContent = abstract ? (showMore ? abstract : `${abstract.slice(0, maxLength)}...`) : 'No abstract available';
 
   return (
     <div className="px-5 my-5">
@@ -78,7 +78,7 @@ function PublicationItem({ id, title, authors, doi, publisher, year, lang, hazar
               </p>
               <p>
                 {abstractContent}
-                {abstract.length > 100 && (
+                {abstract && abstract.length > 100 && (
                   <Link size="sm" onClick={() => setShowMore(!showMore)} className="text-orange-500 mx-4">
                     {showMore ? 'Show less' : 'Read more'}
                   </Link>

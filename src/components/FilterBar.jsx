@@ -1,25 +1,50 @@
-import React from 'react';
-import { useState } from 'react';
-import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react';
-import { Stack, Checkbox, CheckboxGroup } from '@chakra-ui/react';
-import { Button, Input, Select, FormControl, FormLabel, FormErrorMessage, FormHelperText } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Box, Stack, Checkbox, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, Accordion, CheckboxGroup, Button, Input, Select, FormControl, FormLabel } from '@chakra-ui/react';
 import DataItem from '../data/DataItem';
 import { IdkuItem } from '../data/IdkuItem';
 
-function FilterBar() {
+function FilterBar({ setSearchResults }) {
   const provinces = [...new Set(DataItem.map((item) => item.name_adm1))];
   const [filterValue, setFilterValue] = useState('');
+  const [disasterPhaseFilterValues, setDisasterPhaseFilterValues] = useState([]);
+  const [keywordsFilterValue, setKeywordsFilterValue] = useState('');
+  const [provinceFilterValue, setProvinceFilterValue] = useState('');
+  const [hazardFilterValue, setHazardFilterValue] = useState('');
+  const [idkuFilterValue, setIdkuFilterValue] = useState('');
 
   function handleFilterChange(event) {
-    setFilterValue(event.target.value);
+    switch (event.target.name) {
+      case 'disasterPhase':
+        setDisasterPhaseFilterValues(event.target.value);
+        break;
+      case 'keywords':
+        setKeywordsFilterValue(event.target.value);
+        break;
+      case 'province':
+        setProvinceFilterValue(event.target.value);
+        break;
+      case 'hazard':
+        setHazardFilterValue(event.target.value);
+        break;
+      case 'idku':
+        setIdkuFilterValue(event.target.value);
+        break;
+      default:
+        break;
+    }
   }
+
+  function handleDisasterPhaseChange(values) {
+    setDisasterPhaseFilterValues(values);
+  }
+
   function handleFilterSubmit(event) {
     event.preventDefault();
     const selectedFilters = {
-      keywords: filterValue,
+      keywords: keywordsFilterValue,
       disasterPhase: [],
-      province: filterValue,
-      hazard: filterValue,
+      province: provinceFilterValue,
+      hazard: hazardFilterValue,
     };
 
     const selectedDisasterPhases = document.querySelectorAll('input[name="disasterPhase"]:checked');
@@ -27,123 +52,94 @@ function FilterBar() {
       selectedFilters.disasterPhase.push(phase.value);
     });
 
-    console.log(selectedFilters);
+    const filteredData = DataItem.filter((item) => {
+      const matchesKeyword = item.title.toLowerCase().includes(selectedFilters.keywords.toLowerCase());
+      const matchesProvince = item.name_adm1 === selectedFilters.province || selectedFilters.province === '';
+      const matchesHazard = item.hazard === selectedFilters.hazard || selectedFilters.hazard === '';
+      const matchesDisasterPhase = selectedFilters.disasterPhase.length === 0 || selectedFilters.disasterPhase.some((phase) => item.disasterPhase.includes(phase));
+
+      return matchesKeyword && matchesProvince && matchesHazard && matchesDisasterPhase;
+    });
+
+    const filteredIdku = IdkuItem.filter((data) => {
+      const matchesIdku = data.IDKU === idkuFilterValue || idkuFilterValue === '';
+
+      return matchesIdku;
+    });
+
+    setSearchResults(filteredData);
   }
 
   return (
-    <div className="mt-10">
-      <Accordion allowToggle>
-        <form onSubmit={handleFilterSubmit}>
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" className="font-semibold text-lg ">
-                  Research Article on IDKU
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <FormControl>
-                <Select placeholder="Research Article on IDKU Item" className="text-gray-800 " value={filterValue} onChange={handleFilterChange}>
-                  {IdkuItem.map((item, index) => (
-                    <option key={index} value={item.id} className="text-gray-900 font-semibold hover:bg-orange-500 focus:bg-orange-500">
-                      {item.id}-{item.title}
-                    </option>
-                  ))}
-                </Select>
-              </FormControl>
-            </AccordionPanel>
-          </AccordionItem>
+    <Box>
+      <form onSubmit={handleFilterSubmit}>
+        <Stack spacing={6}>
+          <FormControl>
+            <Select placeholder="Research Article on IDKU Item" className="text-gray-800 " value={filterValue} onChange={handleFilterChange}>
+              {IdkuItem.map((item, index) => (
+                <option key={index} value={item.id} className="text-gray-900 font-normal hover:bg-orange-500 focus:bg-orange-500">
+                  {item.id}-{item.title}
+                </option>
+              ))}
+            </Select>
+          </FormControl>
+          <FormControl id="keywords">
+            <FormLabel>Keywords</FormLabel>
+            <Input name="keywords" value={keywordsFilterValue} onChange={handleFilterChange} placeholder="Enter keywords" />
+          </FormControl>
 
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" className="font-semibold text-lg">
-                  Keywords
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <Input value={filterValue} onChange={handleFilterChange} placeholder="Search keyword" />
-            </AccordionPanel>
-          </AccordionItem>
+          <FormControl id="province">
+            <FormLabel>Province</FormLabel>
+            <Select name="province" value={provinceFilterValue} onChange={handleFilterChange} placeholder="Select province">
+              {provinces.map((province) => (
+                <option key={province} value={province}>
+                  {province}
+                </option>
+              ))}
+            </Select>
+          </FormControl>
 
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" className="font-semibold text-lg">
-                  Disaster Phase
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <Stack spacing={[2, 5]} direction={['column']} value={filterValue} onChange={handleFilterChange}>
-                <Checkbox size="md" borderColor="orange.500" colorScheme="orange">
-                  Prevention & Mitigation
-                </Checkbox>
-                <Checkbox size="md" borderColor="orange.500" colorScheme="orange">
-                  Preparedness
-                </Checkbox>
-                <Checkbox size="md" borderColor="orange.500" colorScheme="orange">
-                  Response
-                </Checkbox>
-                <Checkbox size="md" borderColor="orange.500" colorScheme="orange">
-                  Recovery
-                </Checkbox>
-              </Stack>
-            </AccordionPanel>
-          </AccordionItem>
+          <FormControl id="hazard">
+            <FormLabel>Hazard</FormLabel>
+            <Select name="hazard" value={hazardFilterValue} onChange={handleFilterChange} placeholder="Select hazard">
+              <option value="">All hazards</option>
+              <option value="earthquake">Earthquake</option>
+              <option value="flood">Flood</option>
+              <option value="landslide">Landslide</option>
+            </Select>
+          </FormControl>
 
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" className="font-semibold text-lg">
-                  Filter By Province
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <FormControl>
-                <Select placeholder="Select Province" value={filterValue} onChange={handleFilterChange}>
-                  {provinces.map((province, index) => (
-                    <option key={index}>{province}</option>
-                  ))}
-                </Select>
-              </FormControl>
-            </AccordionPanel>
-          </AccordionItem>
+          <Accordion allowMultiple>
+            <Box as="span" flex="1" textAlign="left" className="font-semibold text-md" mb={2}>
+              Disaster Phase
+            </Box>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left" className="font-normal text-md">
+                    Select Disaster Phase
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <CheckboxGroup value={disasterPhaseFilterValues} onChange={handleDisasterPhaseChange}>
+                  <Stack direction="column">
+                    <Checkbox value="preparation">Preparation</Checkbox>
+                    <Checkbox value="response">Response</Checkbox>
+                    <Checkbox value="recovery">Recovery</Checkbox>
+                  </Stack>
+                </CheckboxGroup>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
 
-          <AccordionItem>
-            <h2>
-              <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" className="font-semibold text-lg">
-                  Filter By Hazard
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <FormControl>
-                <Select placeholder="Filter By Hazards" value={filterValue} onChange={handleFilterChange}>
-                  <option>Landslide</option>
-                  <option>Earthquake</option>
-                  <option>Tsunami</option>
-                  <option>Flood</option>
-                  <option>Volcano</option>
-                  <option>Liquefaction</option>
-                  <option>Extreme Weather</option>
-                </Select>
-              </FormControl>
-            </AccordionPanel>
-          </AccordionItem>
-          <button className="h-12 w-36 bg-orange-500 mt-10 mx-auto text-white rounded-full   hover:bg-orange-400 hover:text-white focus:outline-none">Apply Filter</button>
-        </form>
-      </Accordion>
-    </div>
+          <button type="submit" className="h-12 w-36 bg-orange-500 mt-10 mx-auto text-white rounded-full  hover:bg-orange-400 ">
+            Apply Filter
+          </button>
+        </Stack>
+      </form>
+    </Box>
   );
 }
 

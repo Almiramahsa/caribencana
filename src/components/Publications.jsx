@@ -6,14 +6,12 @@ import { useState } from 'react';
 import PublicationItem from './PublicationItem';
 import { Stack, Box, Heading } from '@chakra-ui/react';
 import FilterBar from './FilterBar';
-
 function Publications() {
   const [currentPage, setCurrentPage] = useState(0);
   const recordsPerPage = 3;
   const lastIndex = (currentPage + 1) * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const records = DataItem.slice(firstIndex, lastIndex);
-
   const paginationVariants = {
     hidden: {
       opacity: 0,
@@ -35,15 +33,23 @@ function Publications() {
     setCurrentPage(selected);
   };
 
+  const handleSearch = (results) => {
+    setSearchResults(results);
+  };
+
   return (
     <motion.div variants={paginationVariants} initial="hidden" animate="visible">
       <Stack spacing={8} direction={{ base: 'column', sm: 'column', md: 'row' }} flexWrap={{ base: 'wrap', sm: 'wrap', md: 'nowrap' }} className="mx-5 mt-5 ">
         <Box p={5} borderWidth="1px" width={{ base: '100%', md: '30%' }} flex="1" borderRadius="md">
-          <Heading fontSize="xl">Filter</Heading>
-          <FilterBar />
+          <Heading className="font-semibold text-md" mb={10}>
+            Filter
+          </Heading>
+          <FilterBar setSearchResults={handleSearch} />
         </Box>
+
         <Box p={5} borderWidth="1px" width={{ base: '100%', md: '70%' }} flex="2" borderRadius="md">
           <Heading fontSize="xl">List of Research Articles</Heading>
+
           <ReactPaginate
             breakClassName={'flex items-center justify-center w-10 h-10'}
             breakLabel={'...'}
