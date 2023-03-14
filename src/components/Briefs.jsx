@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardBody, CardFooter, Button, Text, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Link, Card, CardHeader, CardBody, CardFooter, Button, Text, Heading, SimpleGrid } from '@chakra-ui/react';
 import { IdkuItem } from '../data/IdkuItem';
 import bgIdku1 from '../assets/idku-1.png';
 import bgIdku2 from '../assets/idku-2.png';
@@ -9,6 +9,8 @@ import 'react-slideshow-image/dist/styles.css';
 
 function Briefs() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -16,13 +18,20 @@ function Briefs() {
     }, 1000);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const properties = {
     duration: 5000,
     transitionDuration: 500,
     infinite: true,
-    indicators: true,
-    arrows: true,
+    indicators: !isMobile,
+    arrows: !isMobile,
   };
+
   return (
     <div className="mx-20 my-20">
       {isLoading ? (
@@ -32,7 +41,7 @@ function Briefs() {
       ) : (
         <div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center px-4 mx-4">
-            <Slide {...properties} style={{ width: '80%', margin: '0 auto' }}>
+            <Slide {...properties} prevArrow={null} nextArrow={null} style={{ width: '80%', margin: '0 auto' }}>
               <div className="slide  hidden md:block">
                 <img src={bgIdku1} alt="idku caribencana" className="hover:scale-150 w-full md:h-full object-cover md:" />
               </div>
@@ -59,10 +68,19 @@ function Briefs() {
                     {idku.id} - {idku.title}
                   </Text>
                   <Text fontSize="md" color="gray.500">
-                    {idku.publish}
+                    Published : <span>{idku.publish}</span>
                   </Text>
                   <Text fontSize="md" color="gray.500">
-                    {idku.authors}
+                    {idku.authors && idku.authors.length > 50 ? (
+                      <>
+                        {showMore ? idku.authors : idku.authors.slice(0, 50) + '...'}
+                        <Link size="sm" onClick={() => setShowMore(!showMore)} className="text-orange-500 mx-4">
+                          {showMore ? 'Show less' : 'Read more'}
+                        </Link>
+                      </>
+                    ) : (
+                      idku.authors
+                    )}
                   </Text>
                 </CardBody>
                 <CardFooter>
