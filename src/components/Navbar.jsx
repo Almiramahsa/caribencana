@@ -54,7 +54,7 @@ const MenuLinks = ({ isOpen, location }) => {
             Publications
           </Text>
         </a>
-        <a href="#">
+        <a href="/special-brief">
           <Text color={isActive('/special-brief') ? 'orange' : undefined} _hover={{ color: 'orange' }}>
             Special Brief
           </Text>
