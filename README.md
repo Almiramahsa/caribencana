@@ -72,8 +72,7 @@ In the project directory, you can run:
 - User-friendly and accessible through desktop and mobile.
 
 ## Preview
-![image](https://user-images.githubusercontent.com/53558772/223780359-baab9f3f-bf2e-4665-a924-93c0d4b035eb.png)
-![image](https://user-images.githubusercontent.com/53558772/223780519-e6344501-c2ba-4859-b956-2d93c16f1832.png)
+![Cari](https://user-images.githubusercontent.com/53558772/229705518-f4a3b4de-4ef1-48da-8f02-dbae9470e2b6.png)
 ![image](https://user-images.githubusercontent.com/53558772/223780766-a7914512-120d-4c82-a8fc-aa115c86af2a.png)
 ![image](https://user-images.githubusercontent.com/53558772/223782131-d1d75a8d-ae2c-44a2-b2a0-37d46af43c01.png)
 ![image](https://user-images.githubusercontent.com/53558772/223786259-fb61282c-4e3e-4733-850c-bfdebb4b4ef3.png)
